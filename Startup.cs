@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TiendaArtesaniasMarielos.Data;
+//using TiendaArtesaniasMarielos.Data;
 
 namespace TiendaArtesaniasMarielos
 {
@@ -28,7 +28,6 @@ namespace TiendaArtesaniasMarielos
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
