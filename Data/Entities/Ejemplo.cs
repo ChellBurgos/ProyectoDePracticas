@@ -7,5 +7,8 @@ namespace TiendaArtesaniasMarielos.Data.Entities
 {
     public class Ejemplo
     {
+        public int IdEjemplo { get; set; }
+
+        public string NombreEjemplo { get; set; }
     }
 }

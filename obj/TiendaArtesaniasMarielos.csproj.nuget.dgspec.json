@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ChellBurgos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj": {}
+    "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ChellBurgos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj": {
+    "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ChellBurgos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj",
         "projectName": "TiendaArtesaniasMarielos",
-        "projectPath": "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ChellBurgos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj",
+        "projectPath": "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj",
         "packagesPath": "C:\\Users\\Alejandro Moraga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ChellBurgos\\ProyectoDePracticas\\obj\\",
+        "outputPath": "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ProyectoDePracticas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
