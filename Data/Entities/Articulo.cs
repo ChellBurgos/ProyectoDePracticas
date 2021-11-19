@@ -23,6 +23,10 @@ namespace TiendaArtesaniasMarielos.Data.Entities
         public int TA_IdGenero { get; set; }
         public int TA_IdMaterial { get; set; }
 
+        public virtual Categoria Categoria { get; set; }
+
+        public virtual ICollection<DetalleVenta>DetalleVentas { get; set; }
+
 
     }
 }

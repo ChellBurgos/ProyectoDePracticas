@@ -1,7 +1,9 @@
+using CurrieTechnologies.Razor.SweetAlert2;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -9,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TiendaArtesaniasMarielos.Data;
+using TiendaArtesaniasMarielos.Data.Services;
 //using TiendaArtesaniasMarielos.Data;
 
 namespace TiendaArtesaniasMarielos
@@ -28,6 +32,17 @@ namespace TiendaArtesaniasMarielos
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+
+            services.AddDbContext<ArtesaniasDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString(name: "ArtesaniasDbContext")),
+                       ServiceLifetime.Transient);
+            services.AddTransient<ArtesaniasDbContext>();
+            services.AddTransient<RolesService>();
+            services.AddTransient<UsuariosService>();
+
+            services.AddSweetAlert2();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj": {}
+    "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\TiendaArtesaniasMarielos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj": {
+    "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\TiendaArtesaniasMarielos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj",
+        "projectUniqueName": "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\TiendaArtesaniasMarielos.csproj",
         "projectName": "TiendaArtesaniasMarielos",
-        "projectPath": "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ProyectoDePracticas\\TiendaArtesaniasMarielos.csproj",
+        "projectPath": "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\TiendaArtesaniasMarielos.csproj",
         "packagesPath": "C:\\Users\\Alejandro Moraga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alejandro Moraga\\Source\\Repos\\ProyectoDePracticas\\obj\\",
+        "outputPath": "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,6 +45,20 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "CurrieTechnologies.Razor.SweetAlert2": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

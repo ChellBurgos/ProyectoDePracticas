@@ -14,5 +14,9 @@ namespace TiendaArtesaniasMarielos.Data.Entities
         public DateTime Fecha { get; set; }
         public float IVA { get; set; }
         public decimal Total { get; set; }
+
+        public virtual Cliente Cliente { get; set; }
+
+        public virtual ICollection<DetalleVenta>DetalleVentas { get; set; }
     }
 }

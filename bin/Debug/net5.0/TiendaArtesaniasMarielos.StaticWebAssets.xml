@@ -1,3 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="D:\VisualStudio\ProyectoDePracticas\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="D:\Usuarios\Alejandro Moraga\Imágenes\Practica\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/CurrieTechnologies.Razor.SweetAlert2" Path="C:\Users\Alejandro Moraga\.nuget\packages\currietechnologies.razor.sweetalert2\5.1.0\build\..\staticwebassets\" />
 </StaticWebAssets>
