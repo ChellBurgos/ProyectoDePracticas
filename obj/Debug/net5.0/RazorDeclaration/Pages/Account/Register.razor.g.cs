@@ -110,6 +110,13 @@ using CurrieTechnologies.Razor.SweetAlert2;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 27 "D:\Usuarios\Alejandro Moraga\Imágenes\Practica\_Imports.razor"
+using Sotsera.Blazor.Toaster;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/RegistrarUsuario")]
     public partial class Register : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -119,13 +126,15 @@ using CurrieTechnologies.Razor.SweetAlert2;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 85 "D:\Usuarios\Alejandro Moraga\Imágenes\Practica\Pages\Account\Register.razor"
+#line 96 "D:\Usuarios\Alejandro Moraga\Imágenes\Practica\Pages\Account\Register.razor"
        
 
     public bool MostrarMensaje { get; set; } = false;
 
     public Usuario Model { get; set; } = new Usuario
     {
+        
+  
         TU_IdRol = 1,
     };
 

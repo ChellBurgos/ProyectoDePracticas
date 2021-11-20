@@ -22,7 +22,7 @@ namespace TiendaArtesaniasMarielos.Data.Services
 
             var newUser = _context.TblUsuario.FirstOrDefault(x => x.Nombre_Usuario == usuario.Nombre_Usuario);
 
-            if(newUser!=null)
+            if (newUser != null)
             {
                 res.IsSuccess = false;
                 res.Message = "Ya existe un usuario con este nombre";
@@ -67,7 +67,7 @@ namespace TiendaArtesaniasMarielos.Data.Services
 
             var existeUsuario = _context.TblUsuario.FirstOrDefault(x => x.Nombre_Usuario == nombre_usuario);
 
-            if (existeUsuario==null)
+            if (existeUsuario == null)
             {
                 res.IsSuccess = false;
             }
@@ -78,5 +78,36 @@ namespace TiendaArtesaniasMarielos.Data.Services
 
             return res;
         }
-    }
+
+        public MsgResult Login(LoginUsuarioModel model)
+
+        { 
+            var result = new MsgResult();
+
+            var user = _context.TblUsuario.FirstOrDefault(x => x.Nombre_Usuario == model.Usuario);
+
+            if(user==null)
+            {
+                result.IsSuccess = false;
+                result.Message = "Usuario no existe";
+
+                return result;
+            }
+
+            //var passwordHashed = model.Clave.Encriptar();
+
+            if (user.Clave != model.Password)
+            {
+                result.IsSuccess = false;
+                result.Message = "Contraseña no válida";
+                return result;
+            }
+
+            result.IsSuccess = true;
+            result.Message = "Acceso Concedido";
+            return result;
+        }
+
+}
+
 }

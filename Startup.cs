@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Sotsera.Blazor.Toaster.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,7 +41,19 @@ namespace TiendaArtesaniasMarielos
             services.AddTransient<RolesService>();
             services.AddTransient<UsuariosService>();
 
+            
+            
+            //Terceros
             services.AddSweetAlert2();
+
+            // Add the library to the DI system
+            services.AddToaster(config =>
+            {
+                //example customizations
+                config.PositionClass = Defaults.Classes.Position.TopCenter;
+                config.PreventDuplicates = true;
+                config.NewestOnTop = false;
+            });
 
 
         }

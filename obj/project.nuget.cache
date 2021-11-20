@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WykJszY+UyFwl/Jv5oJDyw7iJYP3nVa56awtL4wTQIQmuVUVcOwL+aDhCGx7HvqRBoJHmJ46lZ2aOFjcL7zodg==",
+  "dgSpecHash": "i9jYaaM3dS5FgXjYjiSzpCWhTCE3j2BJN1nSfhaCWzr5X8V48wEKAoWRmI5amVBun7gaPA9JyCF4x23mNoUOeA==",
   "success": true,
   "projectFilePath": "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\TiendaArtesaniasMarielos.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Users\\Alejandro Moraga\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Alejandro Moraga\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\Alejandro Moraga\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\Alejandro Moraga\\.nuget\\packages\\sotsera.blazor.toaster\\3.0.0\\sotsera.blazor.toaster.3.0.0.nupkg.sha512",
     "C:\\Users\\Alejandro Moraga\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Alejandro Moraga\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\Alejandro Moraga\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

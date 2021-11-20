@@ -110,6 +110,13 @@ using CurrieTechnologies.Razor.SweetAlert2;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 27 "D:\Usuarios\Alejandro Moraga\Imágenes\Practica\_Imports.razor"
+using Sotsera.Blazor.Toaster;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/login")]
     public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -118,6 +125,31 @@ using CurrieTechnologies.Razor.SweetAlert2;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 79 "D:\Usuarios\Alejandro Moraga\Imágenes\Practica\Pages\Account\Login.razor"
+       
+
+    public LoginUsuarioModel Model { get; set; } = new LoginUsuarioModel();
+
+    protected void LoginUser()
+    {
+        var res = usuarioService.Login(Model);
+
+        if (!res.IsSuccess)
+        {
+            toaster.Error(res.Message, "Error");
+        }
+        else
+        {
+            toaster.Success(res.Message, "Todo Bien");
+        }
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToaster toaster { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UsuariosService usuarioService { get; set; }
     }
 }
 #pragma warning restore 1591

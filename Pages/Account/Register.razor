@@ -37,6 +37,17 @@
                         </div>
 
                         <div class="col-md-12 mb-3">
+                            <label>
+                                Rol:
+                                <InputSelect @bind-Value="Model.TU_IdRol">
+                                    <option value="">Select Rol ...</option>
+                                    <option value="Administrador">Administrador</option>
+                                    <option value="Vendedor">Vendedor</option>
+                                </InputSelect>
+                            </label>
+                        </div>
+
+                        <div class="col-md-12 mb-3">
                             <label>Contraseña</label>
                             <input type="password" placeholder="Escriba la contraseña" class="form-control" @bind="Model.Clave" />
                             <ValidationMessage For="@(()=>Model.Clave)" />
@@ -88,6 +99,8 @@
 
     public Usuario Model { get; set; } = new Usuario
     {
+        
+  
         TU_IdRol = 1,
     };
 

@@ -110,6 +110,13 @@ using CurrieTechnologies.Razor.SweetAlert2;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 27 "D:\Usuarios\Alejandro Moraga\Imágenes\Practica\_Imports.razor"
+using Sotsera.Blazor.Toaster;
+
+#line default
+#line hidden
+#nullable disable
     public partial class _Imports : System.Object
     {
         #pragma warning disable 1998

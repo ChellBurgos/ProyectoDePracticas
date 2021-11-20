@@ -141,3 +141,4 @@ D:\Usuarios\Alejandro Moraga\Imágenes\Practica\obj\Debug\net5.0\RazorDeclaratio
 D:\Usuarios\Alejandro Moraga\Imágenes\Practica\obj\Debug\net5.0\RazorDeclaration\Pages\RecoverPassword.razor.g.cs
 D:\Usuarios\Alejandro Moraga\Imágenes\Practica\obj\Debug\net5.0\Razor\Pages\Account\Register.razor.g.cs
 D:\Usuarios\Alejandro Moraga\Imágenes\Practica\obj\Debug\net5.0\Razor\Pages\RecoverPassword.razor.g.cs
+D:\Usuarios\Alejandro Moraga\Imágenes\Practica\bin\Debug\net5.0\Sotsera.Blazor.Toaster.dll
