@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\TiendaArtesaniasMarielos.csproj": {}
+    "D:\\Usuarios\\Alejandro Moraga\\Escritorio\\Practica\\TiendaArtesaniasMarielos.csproj": {}
   },
   "projects": {
-    "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\TiendaArtesaniasMarielos.csproj": {
+    "D:\\Usuarios\\Alejandro Moraga\\Escritorio\\Practica\\TiendaArtesaniasMarielos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\TiendaArtesaniasMarielos.csproj",
+        "projectUniqueName": "D:\\Usuarios\\Alejandro Moraga\\Escritorio\\Practica\\TiendaArtesaniasMarielos.csproj",
         "projectName": "TiendaArtesaniasMarielos",
-        "projectPath": "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\TiendaArtesaniasMarielos.csproj",
+        "projectPath": "D:\\Usuarios\\Alejandro Moraga\\Escritorio\\Practica\\TiendaArtesaniasMarielos.csproj",
         "packagesPath": "C:\\Users\\Alejandro Moraga\\.nuget\\packages\\",
-        "outputPath": "D:\\Usuarios\\Alejandro Moraga\\Imágenes\\Practica\\obj\\",
+        "outputPath": "D:\\Usuarios\\Alejandro Moraga\\Escritorio\\Practica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -46,6 +46,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.1.5, )"
+            },
             "CurrieTechnologies.Razor.SweetAlert2": {
               "target": "Package",
               "version": "[5.1.0, )"

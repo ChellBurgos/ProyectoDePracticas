@@ -1,5 +1,6 @@
 ﻿@page "/login"
-@*@layout UnauthorizedLayaout*@
+
+@layout UnauthorizedLayaout
 
 
 <div class="container">
@@ -13,28 +14,28 @@
             <div>
                 <div class="card-body">
                     <EditForm Model="Model" OnValidSubmit="LoginUser">
-                        <DataAnnotationsValidator/>
+                        <DataAnnotationsValidator />
 
 
                         <h4 class="card-title text-center">Iniciar Sesión</h4>
                         <div class="col-md-12 mb-3">
                             <label>Usuario</label>
                             <input type="text" placeholder="Escriba su nombre de usuario" class="form-control" @bind="Model.Usuario" />
-                            <ValidationMessage For="(()=>Model.Usuario)"/>
+                            <ValidationMessage For="(()=>Model.Usuario)" />
                         </div>
 
 
                         <div class="col-md-12 mb-3">
                             <label>Contraseña</label>
                             <input type="password" placeholder="Escriba la contraseña" class="form-control" @bind="Model.Password" />
-                            <ValidationMessage For="(()=>Model.Password)"/>
+                            <ValidationMessage For="(()=>Model.Password)" />
                         </div>
 
 
                         <div class="col-md-12 mb-3">
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                       @bind="Model.Recordar">
+                                       @bind="Model.Recordarme">
                                 <label class="form-check-label" for="exampleCheck1">Mantener sesión abierta </label>
                             </div>
 
@@ -42,7 +43,7 @@
 
                         <div class="col-md-12 mb-3">
                             <button type="submit" class="btn btn-primary btn-block">Iniciar</button>
-                        </div> 
+                        </div>
 
                     </EditForm>
 
@@ -54,33 +55,36 @@
                         <hr />
                     </div>
 
-                   <div class="col-md-12 mb-3">
-                      <h5>¿Aún no tienes cuenta?</h5>
-                   </div>
-                        
-
-                        <div class="col-md-12 mb-3">
-                            <a href="RegistrarUsuario"
-                               class="btn btn-success btn-block">Registrarte Ahora</a>
-                        </div>
-
+                    <div class="col-md-12 mb-3">
+                        <h5>¿Aún no tienes cuenta?</h5>
                     </div>
+
+
+                    <div class="col-md-12 mb-3">
+                        <a href="RegistrarUsuario"
+                           class="btn btn-success btn-block">Registrarte Ahora</a>
+                    </div>
+
+                </div>
             </div>
         </div>
 
     </div>
 </div>
 
-<ToastContainer/>
+<ToastContainer />
 
 @inject UsuariosService usuarioService
+@inject AuthProvider authProvider
+@inject ILocalStorageService localStorage
+@inject NavigationManager navigation
 @inject IToaster toaster
 
 @code {
 
     public LoginUsuarioModel Model { get; set; } = new LoginUsuarioModel();
 
-    protected void LoginUser()
+    protected async Task LoginUser()
     {
         var res = usuarioService.Login(Model);
 
@@ -90,7 +94,17 @@
         }
         else
         {
-            toaster.Success(res.Message, "Todo Bien");
+
+
+            var token = new LoginModel
+            {
+                Usuario = Model.Usuario,
+                Recordar = Model.Recordarme,
+            };
+
+            await authProvider.Login(token);
+
+            navigation.NavigateTo("/", true);
         }
     }
 }

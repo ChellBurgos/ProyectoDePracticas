@@ -1,6 +1,8 @@
+using Blazored.LocalStorage;
 using CurrieTechnologies.Razor.SweetAlert2;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +15,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TiendaArtesaniasMarielos.Data;
+using TiendaArtesaniasMarielos.Data.Providers;
 using TiendaArtesaniasMarielos.Data.Services;
 //using TiendaArtesaniasMarielos.Data;
 
@@ -37,14 +40,18 @@ namespace TiendaArtesaniasMarielos
             services.AddDbContext<ArtesaniasDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString(name: "ArtesaniasDbContext")),
                        ServiceLifetime.Transient);
+
             services.AddTransient<ArtesaniasDbContext>();
             services.AddTransient<RolesService>();
+            services.AddTransient<CategoriasService>();
             services.AddTransient<UsuariosService>();
 
-            
-            
-            //Terceros
+            services.AddTransient<AuthProvider>();
+            services.AddTransient<AuthenticationStateProvider, MiAuthenticationState>();
+
+             //Terceros
             services.AddSweetAlert2();
+            services.AddBlazoredLocalStorage();
 
             // Add the library to the DI system
             services.AddToaster(config =>

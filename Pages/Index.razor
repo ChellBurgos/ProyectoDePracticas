@@ -1,18 +1,5 @@
 ﻿@page "/"
 
-@*@using TiendaArtesaniasMarielos.Data.Services*@
+@*@attribute [Authorize]*@
 
-@inject RolesService rolesService
-
-
-
-<button class="btn btn-primary" @onclick="ListaRoles">Lista de Roles</button>
-
-@code{
-
-    protected void ListaRoles()
-    {
-        var list = rolesService.ListaRoles();
-    }
-
-}
+<h4>Bienvenido a la Tienda Artesanias Marielos</h4>

@@ -18,6 +18,6 @@ namespace TiendaArtesaniasMarielos.Data.Models
         public string Password { get; set; }
 
         [Required]
-        public bool Recordar { get; set; }
+        public bool Recordarme { get; set; }
     }
 }

@@ -14,7 +14,7 @@ namespace TiendaArtesaniasMarielos.Data
 
         }
 
-        public DbSet<Categoria> CatCategorias { get; set; }
+        public DbSet<Categoria> CatCategoria { get; set; }
 
         public DbSet<Cliente> CatCliente{ get; set; }
         public DbSet<DetalleVenta> TblDetalleVenta { get; set; }
